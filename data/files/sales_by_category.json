@@ -1,0 +1,241 @@
+{
+ "version": 21,
+ "sheets": [
+  {
+   "id": "sheet1",
+   "name": "Dashboard",
+   "colNumber": 10,
+   "rowNumber": 20,
+   "rows": {},
+   "cols": {},
+   "merges": [],
+   "cells": {
+    "A1": {
+     "content": "Sales by Category"
+    },
+    "A3": {
+     "content": "=_t(\"Category\")"
+    },
+    "B3": {
+     "content": "=_t(\"Qty Ordered\")"
+    },
+    "C3": {
+     "content": "=_t(\"Untaxed Total\")"
+    },
+    "A4": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",1)"
+    },
+    "B4": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",1)"
+    },
+    "C4": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",1)"
+    },
+    "A5": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",2)"
+    },
+    "B5": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",2)"
+    },
+    "C5": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",2)"
+    },
+    "A6": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",3)"
+    },
+    "B6": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",3)"
+    },
+    "C6": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",3)"
+    },
+    "A7": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",4)"
+    },
+    "B7": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",4)"
+    },
+    "C7": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",4)"
+    },
+    "A8": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",5)"
+    },
+    "B8": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",5)"
+    },
+    "C8": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",5)"
+    },
+    "A9": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",6)"
+    },
+    "B9": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",6)"
+    },
+    "C9": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",6)"
+    },
+    "A10": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",7)"
+    },
+    "B10": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",7)"
+    },
+    "C10": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",7)"
+    },
+    "A11": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",8)"
+    },
+    "B11": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",8)"
+    },
+    "C11": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",8)"
+    },
+    "A12": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",9)"
+    },
+    "B12": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",9)"
+    },
+    "C12": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",9)"
+    },
+    "A13": {
+     "content": "=PIVOT.HEADER(1,\"#categ_id\",10)"
+    },
+    "B13": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\",\"#categ_id\",10)"
+    },
+    "C13": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\",\"#categ_id\",10)"
+    },
+    "A15": {
+     "content": "=_t(\"Total\")"
+    },
+    "B15": {
+     "content": "=PIVOT.VALUE(1,\"product_uom_qty\")"
+    },
+    "C15": {
+     "content": "=PIVOT.VALUE(1,\"price_subtotal\")"
+    }
+   },
+   "styles": {
+    "A1": 1,
+    "A3:C3": 2,
+    "A15:C15": 3
+   },
+   "formats": {},
+   "borders": {},
+   "conditionalFormats": [],
+   "figures": [],
+   "tables": [],
+   "areGridLinesVisible": false,
+   "isVisible": true,
+   "headerGroups": {},
+   "dataValidationRules": [],
+   "comments": {}
+  }
+ ],
+ "styles": {
+  "1": {
+   "bold": true,
+   "fontSize": 16,
+   "textColor": "#01666b"
+  },
+  "2": {
+   "bold": true,
+   "fontSize": 11,
+   "textColor": "#434343"
+  },
+  "3": {
+   "bold": true
+  }
+ },
+ "formats": {},
+ "borders": {},
+ "revisionId": "START_REVISION",
+ "uniqueFigureIds": true,
+ "settings": {
+  "locale": {
+   "name": "English (US)",
+   "code": "en_US",
+   "thousandsSeparator": ",",
+   "decimalSeparator": ".",
+   "dateFormat": "mm/dd/yyyy",
+   "timeFormat": "hh:mm:ss",
+   "formulaArgSeparator": ",",
+   "weekStart": 7
+  }
+ },
+ "pivots": {
+  "1": {
+   "type": "ODOO",
+   "context": {
+    "group_by": []
+   },
+   "domain": [
+    [
+     "state",
+     "not in",
+     [
+      "draft",
+      "sent",
+      "cancel"
+     ]
+    ]
+   ],
+   "id": "1",
+   "measures": [
+    {
+     "id": "product_uom_qty",
+     "fieldName": "product_uom_qty"
+    },
+    {
+     "id": "price_subtotal",
+     "fieldName": "price_subtotal"
+    }
+   ],
+   "model": "sale.report",
+   "name": "Sales Analysis by Category",
+   "sortedColumn": {
+    "groupId": [
+     [],
+     []
+    ],
+    "measure": "price_subtotal",
+    "order": "desc"
+   },
+   "formulaId": "1",
+   "columns": [],
+   "rows": [
+    {
+     "fieldName": "categ_id"
+    }
+   ],
+   "fieldMatching": {
+    "f1a2b3c4-1111-4222-8333-444444444444": {
+     "chain": "date",
+     "type": "datetime"
+    }
+   }
+  }
+ },
+ "pivotNextId": 2,
+ "customTableStyles": {},
+ "odooVersion": 12,
+ "globalFilters": [
+  {
+   "id": "f1a2b3c4-1111-4222-8333-444444444444",
+   "type": "date",
+   "label": "Period",
+   "defaultValue": "this_month",
+   "rangeType": "relative"
+  }
+ ],
+ "lists": {},
+ "listNextId": 1,
+ "chartOdooMenusReferences": {}
+}

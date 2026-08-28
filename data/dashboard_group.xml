@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="spreadsheet_dashboard_group_management_reports" model="spreadsheet.dashboard.group">
+        <field name="name">Management Reports</field>
+        <field name="sequence">10</field>
+    </record>
+
+</odoo>

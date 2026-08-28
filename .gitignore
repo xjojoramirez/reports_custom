@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+*.pot
+.DS_Store
